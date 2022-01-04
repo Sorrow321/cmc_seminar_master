@@ -1,7 +1,7 @@
-<h>2022</h>
-04.01 TODO: потыкать https://github.com/KevinMusgrave/pytorch-metric-learning
+# 2022
+**04.01** TODO: потыкать https://github.com/KevinMusgrave/pytorch-metric-learning
 
-<h>2021</h>
+# 2021
 Вникал в Deep Metric Learning, ориентируясь на <a href="https://hav4ik.github.io/articles/deep-metric-learning-survey">общую обзорную статью</a>. 
 Прочитал саму статью + начал читать в глубину оригинальные статьи. На данный момент прочитал следующие:
 <ul>

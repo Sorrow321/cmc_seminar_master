@@ -1,5 +1,5 @@
 # 2022
-**12.01** TODO: потыкать https://github.com/qdrant/qdrant. Аналог FAISS (и http://milvus.io/) на Rust. Надо сделать пример проекта на базе этого движка.
+**12.01** TODO: потыкать https://github.com/qdrant/qdrant. Аналог FAISS (и http://milvus.io/) на Rust. Надо сделать пример проекта на базе этого движка.<br>
 **04.01** TODO: потыкать https://github.com/KevinMusgrave/pytorch-metric-learning
 
 # 2021

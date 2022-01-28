@@ -1,5 +1,5 @@
 # 2022
-**28.01** Идея небольшого пет проекта. Взять модель для верификации спикера (к примеру, эту https://huggingface.co/microsoft/unispeech-sat-base-plus-sv). Она обучена на метрик лернинг лосс Additive Margin Softmax loss на датасете VoxCeleba1 (голоса разных знаменитостей). Идея: прогоняем весь VoxCeleba1 датасет через эту сетку, загоняем в qdrant весь датасет эмбеддингов. А далее юзер можно поиграть в игру "на кого из знаменитостей больше всего похож мой голос".<br>
+**28.01** Идея небольшого пет проекта. Взять модель для верификации спикера (к примеру, эту https://huggingface.co/microsoft/unispeech-sat-base-plus-sv). Она обучена на метрик лернинг лосс Additive Margin Softmax loss на датасете VoxCeleba1 (голоса разных знаменитостей). Идея: прогоняем весь VoxCeleba1 датасет через эту сетку, загоняем в qdrant весь датасет эмбеддингов. А далее юзер можно поиграть в игру "на кого из знаменитостей больше всего похож мой голос". <a href="https://github.com/Sorrow321/celeba_similarity">Репозиторий пет проекта.</a><br>
 **12.01** TODO: потыкать https://github.com/qdrant/qdrant. Аналог FAISS (и http://milvus.io/) на Rust. Надо сделать пример проекта на базе этого движка.<br>
 **04.01** TODO: потыкать https://github.com/KevinMusgrave/pytorch-metric-learning
 

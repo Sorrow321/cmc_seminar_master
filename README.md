@@ -1,44 +1,44 @@
 # 2022
 **14.02** Изучаю, что можно сделать в качестве исследования. Поспрашивал у людей, выдали такой список статей на почитать:
-Transformers for metric learning
-https://arxiv.org/abs/2102.05644
-https://proceedings.neurips.cc/paper/2021/hash/0f49c89d1e7298bb9930789c8ed59d48-Abstract.html
-https://www.bmvc2021-virtualconference.com/assets/papers/1551.pdf
-https://arxiv.org/abs/2109.12564
-https://openaccess.thecvf.com/content/WACV2022/html/Song_All_the_Attention_You_Need_Global-Local_Spatial-Channel_Attention_for_Image_WACV_2022_paper.html
-https://openaccess.thecvf.com/content/WACV2022/html/Black_Visualizing_Paired_Image_Similarity_in_Transformer_Networks_WACV_2022_paper.html
+Transformers for metric learning  
+https://arxiv.org/abs/2102.05644  
+https://proceedings.neurips.cc/paper/2021/hash/0f49c89d1e7298bb9930789c8ed59d48-Abstract.html  
+https://www.bmvc2021-virtualconference.com/assets/papers/1551.pdf  
+https://arxiv.org/abs/2109.12564  
+https://openaccess.thecvf.com/content/WACV2022/html/Song_All_the_Attention_You_Need_Global-Local_Spatial-Channel_Attention_for_Image_WACV_2022_paper.html  
+https://openaccess.thecvf.com/content/WACV2022/html/Black_Visualizing_Paired_Image_Similarity_in_Transformer_Networks_WACV_2022_paper.html  
 
-Разного рода hard example mining, hard pair mining (это даже важнее лоссов обычно)
-http://openaccess.thecvf.com/content_CVPR_2019/html/Suh_Stochastic_Class-Based_Hard_Example_Mining_for_Deep_Metric_Learning_CVPR_2019_paper.html
-http://openaccess.thecvf.com/content_cvpr_2018_workshops/w1/html/Smirnov_Hard_Example_Mining_CVPR_2018_paper.html
-http://openaccess.thecvf.com/content_iccv_2017/html/Harwood_Smart_Mining_for_ICCV_2017_paper.html
-http://openaccess.thecvf.com/content_ICCV_2017_workshops/w27/html/Smirnov_Doppelganger_Mining_for_ICCV_2017_paper.html
+Разного рода hard example mining, hard pair mining (это даже важнее лоссов обычно)  
+http://openaccess.thecvf.com/content_CVPR_2019/html/Suh_Stochastic_Class-Based_Hard_Example_Mining_for_Deep_Metric_Learning_CVPR_2019_paper.html  
+http://openaccess.thecvf.com/content_cvpr_2018_workshops/w1/html/Smirnov_Hard_Example_Mining_CVPR_2018_paper.html  
+http://openaccess.thecvf.com/content_iccv_2017/html/Harwood_Smart_Mining_for_ICCV_2017_paper.html  
+http://openaccess.thecvf.com/content_ICCV_2017_workshops/w27/html/Smirnov_Doppelganger_Mining_for_ICCV_2017_paper.html  
 
 Knowledge Distillation for metric learning (уже есть всякие методы, но можно придумать ещё) 
 
-Mixup/CutMix-like methods, suitable for metric learning (в стандартном варианте непонятно как "смешивать таргеты", если картинки из разных классов)
-https://proceedings.neurips.cc/paper/2020/hash/f7cade80b7cc92b991cf4d2806d6bd78-Abstract.html
-https://arxiv.org/abs/2106.04990
-https://arxiv.org/abs/2010.08887
+Mixup/CutMix-like methods, suitable for metric learning (в стандартном варианте непонятно как "смешивать таргеты", если картинки из разных классов)  
+https://proceedings.neurips.cc/paper/2020/hash/f7cade80b7cc92b991cf4d2806d6bd78-Abstract.html  
+https://arxiv.org/abs/2106.04990  
+https://arxiv.org/abs/2010.08887  
 
 Методы metric learning, стойкие к noisy labels (а то это становится проблемой, особенно когда ещё hard example mining используется, и получается, что выбираемые "сложные примеры" - это примеры с неправильными лейблами)
 
 Генерация "виртуальных классов" и "виртуальных примеров"
-https://proceedings.neurips.cc/paper/2018/hash/d79aac075930c83c2f1e369a511148fe-Abstract.html
-http://openaccess.thecvf.com/content/ICCV2021/html/Ko_Learning_With_Memory-Based_Virtual_Classes_for_Deep_Metric_Learning_ICCV_2021_paper.html
-https://www.aaai.org/AAAI21Papers/AAAI-1275.GuG.pdf
-http://openaccess.thecvf.com/content/CVPR2021/html/Li_VirFace_Enhancing_Face_Recognition_via_Unlabeled_Shallow_Data_CVPR_2021_paper.html
-https://arxiv.org/abs/2201.01008
-https://www.sciencedirect.com/science/article/pii/S0031320320304465?casa_token=ckxSbwsZVf0AAAAA:y64cyBSBe1e7dQG_8vm0bTGzYkE6b2B24VXPVriZh6_zggUIBs_zNiV6Q2S_ZS9R9uud4FA
+https://proceedings.neurips.cc/paper/2018/hash/d79aac075930c83c2f1e369a511148fe-Abstract.html  
+http://openaccess.thecvf.com/content/ICCV2021/html/Ko_Learning_With_Memory-Based_Virtual_Classes_for_Deep_Metric_Learning_ICCV_2021_paper.html  
+https://www.aaai.org/AAAI21Papers/AAAI-1275.GuG.pdf  
+http://openaccess.thecvf.com/content/CVPR2021/html/Li_VirFace_Enhancing_Face_Recognition_via_Unlabeled_Shallow_Data_CVPR_2021_paper.html  
+https://arxiv.org/abs/2201.01008  
+https://www.sciencedirect.com/science/article/pii/S0031320320304465?  casa_token=ckxSbwsZVf0AAAAA:y64cyBSBe1e7dQG_8vm0bTGzYkE6b2B24VXPVriZh6_zggUIBs_zNiV6Q2S_ZS9R9uud4FA  
 
-Разного рода Cross-Batch Memory, когда в процессе обучения запоминаются эмбеддинги (последние или оказавшиеся наиболее сложными), которые потом используются для уточнения "тренировочного сигнала".
-http://openaccess.thecvf.com/content_CVPR_2020/html/Wang_Cross-Batch_Memory_for_Embedding_Learning_CVPR_2020_paper.html
-https://arxiv.org/abs/2008.09809
-https://arxiv.org/abs/2008.06674
-https://arxiv.org/abs/2105.02103
+Разного рода Cross-Batch Memory, когда в процессе обучения запоминаются эмбеддинги (последние или оказавшиеся наиболее сложными), которые потом используются для уточнения "тренировочного сигнала".  
+http://openaccess.thecvf.com/content_CVPR_2020/html/Wang_Cross-Batch_Memory_for_Embedding_Learning_CVPR_2020_paper.html  
+https://arxiv.org/abs/2008.09809  
+https://arxiv.org/abs/2008.06674  
+https://arxiv.org/abs/2105.02103  
 
 Fairness and bias in metric learning
-https://dl.acm.org/doi/abs/10.1145/3457607
+https://dl.acm.org/doi/abs/10.1145/3457607  
 
 Помимо этого также смотрю исследования на тему self-supervised learning
 

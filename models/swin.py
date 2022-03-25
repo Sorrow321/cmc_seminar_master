@@ -1,6 +1,5 @@
 from transformers import AutoFeatureExtractor, SwinPreTrainedModel, SwinModel
 from base_model import BaseModel
-import torch.nn as nn
 
 
 class SwinEmbedding(SwinPreTrainedModel):

@@ -1,10 +1,40 @@
-from transformers import AutoFeatureExtractor, SwinForImageClassification
-from PIL import Image
-import requests
+from transformers import AutoFeatureExtractor, SwinPreTrainedModel, SwinModel
+from base_model import BaseModel
+import torch.nn as nn
 
 
-feature_extractor = AutoFeatureExtractor.from_pretrained("microsoft/swin-base-patch4-window7-224")
-model = SwinForImageClassification.from_pretrained("microsoft/swin-base-patch4-window7-224")
+class SwinEmbedding(SwinPreTrainedModel):
+    def __init__(self, config):
+        super().__init__(config)
+        self.swin = SwinModel(config)
+        self.post_init()
 
-inputs = feature_extractor(images=image, return_tensors="pt")
-outputs = model(**inputs)
+    def forward(
+        self,
+        pixel_values=None,
+        head_mask=None,
+        output_attentions=None,
+        output_hidden_states=None,
+        return_dict=None,
+    ):
+        return_dict = return_dict if return_dict is not None else self.config.use_return_dict
+        outputs = self.swin(
+            pixel_values,
+            head_mask=head_mask,
+            output_attentions=output_attentions,
+            output_hidden_states=output_hidden_states,
+            return_dict=return_dict,
+        )
+        pooled_output = outputs[1]
+        return pooled_output
+
+
+
+class SwinTransformerModel(BaseModel):
+    def __init__(self, *args):
+        self.feature_extractor = AutoFeatureExtractor.from_pretrained(*args)
+        self.model = SwinEmbedding.from_pretrained(*args)
+    
+    def get_embeddings(self, input):
+        inputs = self.feature_extractor(images=input, return_tensors="pt")
+        return self.model(**inputs)

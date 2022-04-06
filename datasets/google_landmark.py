@@ -6,7 +6,7 @@ import pandas as pd
 from torch.utils.data import Dataset
 
 
-class landmark_train_dataset(Dataset):
+class google_landmark_dataset(Dataset):
     def __init__(self):
         self.df = pd.read_csv('google-landmark/train.csv')
     

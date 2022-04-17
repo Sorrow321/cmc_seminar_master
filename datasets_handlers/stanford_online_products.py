@@ -1,4 +1,3 @@
-import cv2
 import pandas as pd
 from torch.utils.data import Dataset
 
@@ -16,8 +15,7 @@ class stanford_products_dataset(Dataset):
     def __getitem__(self, idx):
         path = 'Stanford_Online_Products/' + self.df.iloc[idx]['path']
         label = self.df.iloc[idx]['class_id']
-        image = cv2.imread(path)
-        return image, label
+        return path, label
 
     def __len__(self):
         return self.df.shape[0]

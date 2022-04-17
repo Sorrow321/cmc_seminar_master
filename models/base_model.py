@@ -1,6 +1,8 @@
-class BaseModel():
-    def __init__(self, *args):
-        raise NotImplementedError("Please Implement this method")
+import torch.nn as nn
 
-    def get_embeddings(self, input):
+class BaseModel(nn.Module):
+    def __init__(self, *args):
+        super().__init__()
+
+    def __call__(self, input):
         raise NotImplementedError("Please Implement this method") 

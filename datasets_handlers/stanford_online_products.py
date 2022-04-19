@@ -7,9 +7,9 @@ class stanford_products_dataset(Dataset):
         if split not in ['train', 'test']:
             raise Exception('wrong split: should be train or test')
         if split == 'train':
-            path = 'Stanford_Online_Products/Ebay_train.txt'
+            path = 'data/Stanford_Online_Products/Ebay_train.txt'
         else:
-            path = 'Stanford_Online_Products/Ebay_test.txt'
+            path = 'data/Stanford_Online_Products/Ebay_test.txt'
         self.df = pd.read_csv(path, sep=' ')[['path', 'class_id']]
 
     def __getitem__(self, idx):

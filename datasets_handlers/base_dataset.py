@@ -20,3 +20,18 @@ class BaseImageDataset(Dataset):
 
     def __len__(self):
         return len(self.dataset)
+
+class ClassLabelsMapper(Dataset):
+    def __init__(self, dataset):
+        self.dataset = dataset
+        labels = [label for _, label in self.dataset]
+        labels_set = set(labels)
+        self.labels_map = {label:i for i, label in enumerate(labels_set)}
+
+
+    def __getitem__(self, idx):
+        data, label = self.dataset[idx]
+        return data, self.labels_map[label]
+
+    def __len__(self):
+        return len(self.dataset)

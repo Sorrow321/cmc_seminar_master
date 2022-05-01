@@ -1,5 +1,5 @@
 from transformers import AutoFeatureExtractor, SwinPreTrainedModel, SwinModel
-from base_model import BaseModel
+from .base_model import BaseModel
 
 
 class SwinEmbedding(SwinPreTrainedModel):
@@ -31,9 +31,10 @@ class SwinEmbedding(SwinPreTrainedModel):
 
 class SwinTransformerModel(BaseModel):
     def __init__(self, *args):
+        super().__init__()
         self.feature_extractor = AutoFeatureExtractor.from_pretrained(*args)
         self.model = SwinEmbedding.from_pretrained(*args)
     
-    def get_embeddings(self, input):
+    def __call__(self, input):
         inputs = self.feature_extractor(images=input, return_tensors="pt")
         return self.model(**inputs)
